@@ -13,6 +13,10 @@ function App() {
     }
   }
 
+  const handler = (event) => {
+    setCity(event.target.value)
+  }
+
   const getWeather = async () => {
     if(!city){
       return
@@ -34,7 +38,7 @@ function App() {
 
 
   return (
-    <WeatherBlocks weatherData={weatherData} setCity={setCity} city={city} getWeather={getWeather} error={error} keyPress={keyPress}/>
+    <WeatherBlocks weatherData={weatherData} setCity={setCity} city={city} getWeather={getWeather} error={error} keyPress={keyPress} handler={handler}/>
   );
 }
 
