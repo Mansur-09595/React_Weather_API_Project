@@ -5,6 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  font-family: 'Inter', sans-serif;
+  color: white;
+  background: url('./image/weather-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 code {
